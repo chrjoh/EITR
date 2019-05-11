@@ -5,7 +5,7 @@ Installation
 1. Create an Ubuntu 18.04 host
 2. Place install.sh in the /home/$USER folder
 3. chmod +x install.sh
-4. Run with ./install.sh
+4. Run with ./install.sh (do not run as root or sudo)
 
 Packages and Tools
 - masscan
