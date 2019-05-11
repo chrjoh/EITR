@@ -7,6 +7,10 @@ Installation
 3. chmod +x install.sh
 4. Run with ./install.sh (do not run as root or sudo)
 
+Notes
+- Only tested on Ubuntu 18.04 and Ubuntu 19.04
+- After installation, run scripts in /recon as root
+
 Packages and Tools
 - masscan
 - nmap
@@ -64,7 +68,3 @@ Packages and Tools
 - wfuzz
 - gobuster
 - SharpShooter
-
-Notes
-- Only tested on Ubuntu 18.04 and Ubuntu 19.04
-- After installation, run scripts in /recon as root
