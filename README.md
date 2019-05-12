@@ -18,6 +18,7 @@ Packages and Tools
 - ufw
 - php-curl
 - nginx
+- netdiscover
 - apache2
 - html2text
 - hashcat
