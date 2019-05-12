@@ -35,6 +35,7 @@ init_sys() {
 	echo ""
 	sudo apt -y install snmp;
 	sudo apt -y install php-curl;
+	sudo apt -y install netdiscover;
 	sudo apt -y install postgresql;
 	sudo apt -y install ruby-dev;
 	sudo apt -y install build-essential;
