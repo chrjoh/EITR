@@ -7,6 +7,12 @@ mag='\e[1;35m'
 cyn='\e[1;36m'
 white='\e[0m'
 
+if ! [ $(id -u) != 0 ]; then
+   echo $red"Do not run as root. Script will sudo as needed."$white
+   echo ""
+   exit 1
+fi
+
 init_sys() {
 	clear
 	echo ""
@@ -257,8 +263,8 @@ provision() {
 	echo ""
 
 	echo $blu"Cloning recon scripts..."$white;
-	sudo curl -s "https://gist.githubusercontent.com/0xValkyrie/0e123d8c89b2c7edd72e4a7072c69bce/raw/dedf9200bc8c615769743a067ce701716edeb6fb/scan.sh" > ~/recon/autoscan.sh;
-	sudo curl -s "https://gist.githubusercontent.com/0xValkyrie/0e123d8c89b2c7edd72e4a7072c69bce/raw/dedf9200bc8c615769743a067ce701716edeb6fb/msfauto.sh" > ~/recon/intensive_scan.sh;
+	sudo curl -s "https://gist.githubusercontent.com/0xValkyrie/0e123d8c89b2c7edd72e4a7072c69bce/raw/8de961c7958212ceea9b6a900517ea96b57dd986/scan.sh" > ~/recon/autoscan.sh;
+	sudo curl -s "https://gist.githubusercontent.com/0xValkyrie/0e123d8c89b2c7edd72e4a7072c69bce/raw/8de961c7958212ceea9b6a900517ea96b57dd986/msfauto.sh" > ~/recon/intensive_scan.sh;
 	sudo curl -s "https://gist.githubusercontent.com/0xValkyrie/0e123d8c89b2c7edd72e4a7072c69bce/raw/dedf9200bc8c615769743a067ce701716edeb6fb/deploy.py" > ~/git_clone.py;
 	sudo curl -s "https://gist.githubusercontent.com/0xValkyrie/0e123d8c89b2c7edd72e4a7072c69bce/raw/dedf9200bc8c615769743a067ce701716edeb6fb/repos.csv" > ~/repos.csv;
 
