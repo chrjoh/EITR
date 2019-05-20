@@ -55,157 +55,157 @@ provision() {
 	if test ! $(which ufw); then
 		echo $grn "* Installing ufw" $white
 		sudo apt -y -qq install ufw > /dev/null 2>&1;
-		else echo $red "* ufw is already installed" $white
+		else echo $red "* ufw is already installed" "("$(type ufw)")" $white
 	fi
 
 	if test ! $(which nginx); then
 		echo $grn "* Installing nginx" $white
 		sudo apt -y -qq install nginx > /dev/null 2>&1;
-		else echo $red "* nginx is already installed" $white
+		else echo $red "* nginx is already installed" "("$(type nginx)")" $white
 	fi
 
 	if test ! $(which apache2); then
 		echo $grn "* Installing apache2" $white
 		sudo apt -y -qq install apache2 > /dev/null 2>&1;
-		else echo $red "* apache2 is already installed" $white
+		else echo $red "* apache2 is already installed" "("$(type apache2)")" $white
 	fi
 
 	if test ! $(which nmap); then
 		echo $grn "* Installing nmap" $white
 		sudo apt -y -qq install nmap > /dev/null 2>&1;
-		else echo $red "* nmap is already installed" $white
+		else echo $red "* nmap is already installed" "("$(type nmap)")" $white
 	fi
 
 	if test ! $(which zmap); then
 		echo $grn "* Installing zmap" $white
 		sudo apt -y -qq install zmap > /dev/null 2>&1;
-		else echo $red "* zmap is already installed" $white
+		else echo $red "* zmap is already installed" "("$(type zmap)")" $white
 	fi	
 
 	if test ! $(which html2text); then
 		echo $grn "* Installing html2text" $white
 		sudo apt -y -qq install html2text > /dev/null 2>&1;
-		else echo $red "* html2text is already installed" $white
+		else echo $red "* html2text is already installed" "("$(type html2text)")" $white
 	fi
 
 	if test ! $(which hashcat); then
 		echo $grn "* Installing hashcat" $white
 		sudo apt -y -qq install hashcat > /dev/null 2>&1;
-		else echo $red "* hashcat is already installed" $white
+		else echo $red "* hashcat is already installed" "("$(type hashcat)")" $white
 	fi
 
 	if test ! $(which hashid); then
 		echo $grn "* Installing hashid" $white
 		sudo apt -y -qq install hashid > /dev/null 2>&1;
-		else echo $red "* hashid is already installed" $white
+		else echo $red "* hashid is already installed" "("$(type hashid)")" $white
 	fi
 	
 	if test ! $(which python); then
 		echo $grn "* Installing python" $white
 		sudo apt -y -qq install python > /dev/null 2>&1;
-		else echo $red "* python is already installed" $white
+		else echo $red "* python is already installed" "("$(type python)")" $white
 	fi
 
 	if test ! $(which pip); then
 		echo $grn "* Installing python-pip" $white
 		sudo apt -y -qq install python-pip > /dev/null 2>&1;
-		else echo $red "* python-pip is already installed" $white
+		else echo $red "* python-pip is already installed" "("$(type pip)")" $white
 	fi
 
 	if test ! $(which python3); then
 		echo $grn "* Installing python3" $white
 		sudo apt -y -qq install python3 > /dev/null 2>&1;
-		else echo $red "* python3 is already installed" $white
+		else echo $red "* python3 is already installed" "("$(type python3)")" $white
 	fi
 
 	if test ! $(which pip3); then
 		echo $grn "* Installing python3-pip" $white
 		sudo apt -y -qq install python3-pip > /dev/null 2>&1;
-		else echo $red "* python3-pip is already installed" $white
+		else echo $red "* python3-pip is already installed" "("$(type pip3)")" $white
 	fi
 
 	if test ! $(which curl); then
 		echo $grn "* Installing curl" $white
 		sudo apt -y -qq install curl > /dev/null 2>&1;
-		else echo $red "* curl is already installed" $white
+		else echo $red "* curl is already installed" "("$(type curl)")" $white
 	fi
 
 	if test ! $(which wget); then
 		echo $grn "* Installing wget" $white
 		sudo apt -y -qq install wget > /dev/null 2>&1;
-		else echo $red "* wget is already installed" $white
+		else echo $red "* wget is already installed" "("$(type wget)")" $white
 	fi
 
 	if test ! $(which git); then
 		echo $grn "* Installing git" $white
 		sudo apt -y -qq install git > /dev/null 2>&1;
-		else echo $red "* git is already installed" $white
+		else echo $red "* git is already installed" "("$(type git)")" $white
 	fi
 
 	if test ! $(which ruby); then
 		echo $grn "* Installing ruby" $white
 		sudo apt -y -qq install ruby > /dev/null 2>&1;
-		else echo $red "* ruby is already installed" $white
+		else echo $red "* ruby is already installed" "("$(type ruby)")" $white
 	fi
 
 	if test ! $(which rake); then
 		echo $grn "* Installing rake" $white
 		sudo apt -y -qq install rake > /dev/null 2>&1;
-		else echo $red "* rake is already installed" $white
+		else echo $red "* rake is already installed" "("$(type rake)")" $white
 	fi
 
 	if test ! $(which nodejs); then
 		echo $grn "* Installing nodejs" $white
 		sudo apt -y -qq install nodejs > /dev/null 2>&1;
-		else echo $red "* nodejs is already installed" $white
+		else echo $red "* nodejs is already installed" "("$(type nodejs)")" $white
 	fi	
 
 	if test ! $(which make); then
 		echo $grn "* Installing make" $white
 		sudo apt -y -qq install make > /dev/null 2>&1;
-		else echo $red "* make is already installed" $white
+		else echo $red "* make is already installed" "("$(type make)")" $white
 	fi	
 
 	if test ! $(which go); then
 		echo $grn "* Installing golang" $white
 		sudo apt -y -qq install golang > /dev/null 2>&1;
-		else echo $red "* golang is already installed" $white
+		else echo $red "* golang is already installed" "("$(type go)")" $white
 	fi	 
 
 	if test ! $(which cargo); then
 		echo $grn "* Installing cargo" $white
 		sudo apt -y -qq install cargo > /dev/null 2>&1;
-		else echo $red "* cargo is already installed" $white
+		else echo $red "* cargo is already installed" "("$(type cargo)")" $white
 	fi
 
 	if test ! $(which openssl); then
 		echo $grn "* Installing openssl" $white
 		sudo apt -y -qq install openssl > /dev/null 2>&1;
-		else echo $red "* openssl is already installed" $white
+		else echo $red "* openssl is already installed" "("$(type openssl)")" $white
 	fi	
 
 	if test ! $(which socat); then
 		echo $grn "* Installing socat" $white
 		sudo apt -y -qq install socat > /dev/null 2>&1;
-		else echo $red "* socat is already installed" $white
+		else echo $red "* socat is already installed" "("$(type socat)")" $white
 	fi
 
 	if test ! $(which openvpn); then
 		echo $grn "* Installing openvpn" $white
 		sudo apt -y -qq install openvpn > /dev/null 2>&1;
-		else echo $red "* openvpn is already installed" $white
+		else echo $red "* openvpn is already installed" "("$(type openvpn)")" $white
 	fi
 
 	if test ! $(which dirb); then
 		echo $grn "* Installing dirb" $white
 		sudo apt -y -qq install dirb > /dev/null 2>&1;
-		else echo $red "* dirb is already installed" $white
+		else echo $red "* dirb is already installed" "("$(type dirb)")" $white
 	fi
 
 	if test ! $(which nikto); then
 		echo $grn "* Installing nikto" $white
 		sudo apt -y -qq install nikto > /dev/null 2>&1;
-		else echo $red "* nikto is already installed" $white
+		else echo $red "* nikto is already installed" "("$(type nikto)")" $white
 	fi
 	echo""
 
