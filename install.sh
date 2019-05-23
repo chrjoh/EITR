@@ -39,7 +39,7 @@ init_sys() {
     echo ""
     echo $blu"Upgrading system packages..."$white
     echo ""
-    sudo apt -y install snmp php-curl netdiscover postgresql ruby-dev build-essential gnupg2 libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev libgmp-dev zlib1g-dev libssl-dev libffi-dev python-dev;
+    sudo apt -y install snmp php-curl netdiscover net-tools postgresql ruby-dev build-essential gnupg2 libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev libgmp-dev zlib1g-dev libssl-dev libffi-dev python-dev;
     sudo apt -y full-upgrade;
     
     echo ""
