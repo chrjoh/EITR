@@ -58,17 +58,17 @@ provision() {
     else echo $red "* ufw is already installed" "("$(type ufw)")" $white
     fi
     
-    if test ! $(which nginx); then
-        echo $grn "* Installing nginx" $white
-        sudo apt -y -qq install nginx > /dev/null 2>&1;
-    else echo $red "* nginx is already installed" "("$(type nginx)")" $white
-    fi
+    #if test ! $(which nginx); then
+    #    echo $grn "* Installing nginx" $white
+    #    sudo apt -y -qq install nginx > /dev/null 2>&1;
+    #else echo $red "* nginx is already installed" "("$(type nginx)")" $white
+    #fi
     
-    if test ! $(which apache2); then
-        echo $grn "* Installing apache2" $white
-        sudo apt -y -qq install apache2 > /dev/null 2>&1;
-    else echo $red "* apache2 is already installed" "("$(type apache2)")" $white
-    fi
+    #if test ! $(which apache2); then
+    #    echo $grn "* Installing apache2" $white
+    #    sudo apt -y -qq install apache2 > /dev/null 2>&1;
+    #else echo $red "* apache2 is already installed" "("$(type apache2)")" $white
+    #fi
     
     if test ! $(which nmap); then
         echo $grn "* Installing nmap" $white
